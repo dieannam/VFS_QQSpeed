@@ -1,1 +1,362 @@
-<!DOCTYPE html><html lang="vi" class="scroll-smooth"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>VFS QQ飞车-端游</title><link rel="icon" type="favicon" href="favicon.ico"><link rel="shortcut icon" href="favicon.ico"><script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet"><style> body { font-family: 'Inter', sans-serif; background-color: #0d1117; color: #c9d1d9; } .fade-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); } .fade-up.visible { opacity: 1; transform: translateY(0); } .pricing-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.2); } .pricing-card { transition: all 0.3s ease; } .glass-nav { background: rgba(13, 17, 23, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid #30363d; } </style></head><body class="antialiased overflow-x-hidden"><nav class="fixed w-full z-50 glass-nav transition-all duration-300"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between items-center h-16"><div class="flex items-center gap-2"><i class="fa-solid fa-cube text-blue-500 text-2xl"></i><span class="font-bold text-xl text-white tracking-wider">VFS QQ飞车-端游</span></div><div class="hidden md:flex space-x-8 items-center"><a href="#home" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_home">Trang chính</a><a href="#info" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_info">Thông tin</a><a href="#guide" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_guide">Hướng dẫn</a><a href="#pricing" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_pricing">Bảng giá</a><a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_contact">Liên hệ</a><button id="lang-toggle" onclick="toggleLanguage()" class="ml-4 px-3 py-1 bg-gray-800 border border-gray-600 rounded text-sm hover:bg-gray-700 transition flex items-center gap-2"><i class="fa-solid fa-globe"></i><span id="lang-label">EN</span></button></div></div></div></nav><section id="home" class="pt-32 pb-20 px-4"><div class="max-w-6xl mx-auto text-center fade-up"><h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight" data-i18n="hero_title"> Tool <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">VFS</span> cho QQ飞车-端游 </h1><p class="text-lg text-gray-400 mb-10 max-w-2xl mx-auto" data-i18n="hero_desc"> Công cụ chuyên nghiệp hỗ trợ trích xuất và đóng gói file .vfs cho hệ thống QQ飞车-端游 PC. Tối ưu hóa luồng làm việc với tốc độ cực hạn và độ chính xác tuyệt đối. </p><div class="relative mx-auto w-full max-w-4xl rounded-xl border border-gray-700 shadow-2xl overflow-hidden mb-16 group"><img src="advfs.png" alt="Tool Interface" class="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent"></div></div><div class="max-w-4xl mx-auto rounded-xl overflow-hidden border border-gray-700 shadow-2xl fade-up"><h3 class="bg-gray-800 text-left px-4 py-2 text-sm text-gray-400 font-semibold border-b border-gray-700"><i class="fa-solid fa-circle-play mr-2"></i>Live Demo</h3><video autoplay loop muted playsinline class="w-full"><source src="ReviewVfs.webm" type="video/webm"> Your browser does not support the video tag. </video></div></div></section><section id="info" class="py-20 bg-[#161b22] border-y border-[#30363d]"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-16 fade-up"><h2 class="text-3xl font-bold text-white mb-4" data-i18n="info_title">Sức Mạnh Cốt Lõi</h2><p class="text-gray-400 max-w-2xl mx-auto" data-i18n="info_subtitle">Chúng tôi cung cấp 2 phiên bản phần mềm được tinh chỉnh đặc biệt, đáp ứng mọi cấp độ của người sử dụng.</p></div><div class="grid md:grid-cols-2 gap-8"><div class="bg-[#0d1117] p-8 rounded-2xl border border-gray-700 fade-up"><div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-6 border border-blue-500/30"><i class="fa-solid fa-cube text-blue-400 text-xl"></i></div><h3 class="text-2xl font-bold text-white mb-2">GUIVFS.exe</h3><p class="text-blue-400 text-sm font-semibold mb-6 uppercase tracking-wider" data-i18n="ver_standard">Phiên bản Tiêu Chuẩn</p><ul class="space-y-4 text-gray-300"><li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f1">Nạp mượt mà các file .vfs tiêu chuẩn của tựa game QQ飞车-端游 (speed.qq.com).</span></li><li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f2">Hỗ trợ đầy đủ định dạng cơ bản: .gsa, .tga, .png, .jpg, .lua, .luc.</span></li><li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f3">Hệ thống Unpack & Reimport an toàn, ngăn chặn việc ghi đè các file trùng tên.</span></li><li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f4">Hiển thị sẵn Thumbnail và xem Review trực tiếp trong Tool mà không cần xuất file ra ổ cứng.</span></li><li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f5">Giao diện đồ họa (GUI) thân thiện, trực quan, dễ dàng thao tác cho người mới.</span></li></ul></div><div class="bg-gradient-to-b from-gray-800 to-[#0d1117] p-8 rounded-2xl border border-purple-500/50 relative overflow-hidden fade-up" style="transition-delay: 0.2s;"><div class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg" data-i18n="badge_pro">BẢN CHUYÊN NGHIỆP</div><div class="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center mb-6 border border-purple-500/30"><i class="fa-solid fa-bolt text-purple-400 text-xl"></i></div><h3 class="text-2xl font-bold text-white mb-2">VFS.exe</h3><p class="text-purple-400 text-sm font-semibold mb-6 uppercase tracking-wider" data-i18n="ver_premium">Phiên bản Cao Cấp</p><ul class="space-y-4 text-gray-300"><li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f1">Nạp và giải mã toàn bộ nguyên bản các cấu trúc .vfs tân tiến và phức tạp nhất. Bao gồm mọi tính năng của bản GUIVFS.</span></li><li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f2">Hỗ trợ Review và Thumbnail chuyên sâu cho các định dạng đồ họa lõi: .dds, .tga, .gsa, .png, .jpg, .bmp...</span></li><li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f3">Động cơ Unpack & Reimport thông minh, tự động vượt qua các lớp bảo vệ và tránh các lỗi tiềm ẩn cực kỳ hiệu quả.</span></li><li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f4">Bảo vệ cấu trúc tệp gốc, cam kết tỷ lệ lỗi vặt (bugs) ở mức thấp.</span></li></ul></div></div><div class="mt-12 bg-yellow-900/20 border-l-4 border-yellow-500 p-4 rounded-r text-sm text-yellow-200/80 fade-up"><p><i class="fa-solid fa-triangle-exclamation mr-2"></i><strong data-i18n="disclaimer_title">Lưu ý quan trọng:</strong><span data-i18n="disclaimer_text">Phần mềm chỉ cung cấp giải pháp can thiệp luồng dữ liệu (Nạp và Xuất file chứa trong .vfs). Chúng tôi không chịu trách nhiệm hay hỗ trợ các vấn đề liên quan đến việc chỉnh sửa, edit nội dung, hay thay đổi logic bên trong các file đó. Khách hàng vui lòng tự chủ động nghiên cứu. Phía dịch vụ chỉ hỗ trợ kỹ thuật liên quan đến vận hành Tool.</span></p></div></div></section><section id="guide" class="py-20 px-4"><div class="max-w-5xl mx-auto"><h2 class="text-3xl font-bold text-white mb-12 text-center fade-up" data-i18n="guide_title">Hướng Dẫn Sử Dụng</h2><div class="space-y-8 mb-16 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-600 before:to-transparent"><div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active fade-up"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#0d1117] bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">1</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#161b22] p-5 rounded-xl border border-gray-700 shadow-lg"><h4 class="text-lg font-bold text-white mb-2" data-i18n="step1_title">Giao dịch & Nhận Key</h4><p class="text-gray-400 text-sm" data-i18n="step1_desc">Liên hệ trực tiếp qua thông tin phía dưới. Sau khi hoàn tất chuyển khoản, bạn sẽ được cấp quyền và nhận một License KEY độc quyền.</p></div></div><div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active fade-up"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#0d1117] bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">2</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#161b22] p-5 rounded-xl border border-gray-700 shadow-lg"><h4 class="text-lg font-bold text-white mb-2" data-i18n="step2_title">Tải & Cài đặt</h4><p class="text-gray-400 text-sm" data-i18n="step2_desc">Hệ thống sẽ gửi link tải an toàn. Tải tệp nén về máy tính và giải nén bằng WinRAR/7-Zip theo cách thông thường.</p></div></div><div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active fade-up"><div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#0d1117] bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">3</div><div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#161b22] p-5 rounded-xl border border-red-900/50 shadow-lg"><h4 class="text-lg font-bold text-white mb-2" data-i18n="step3_title">Kích hoạt Tool (ĐỌC KỸ)</h4><p class="text-gray-400 text-sm mb-3" data-i18n="step3_desc">Mở Tool, dán KEY của bạn vào hộp thoại để kích hoạt máy.</p><div class="bg-red-900/30 border border-red-700 p-3 rounded text-xs text-red-200"><i class="fa-solid fa-lock mr-1"></i><b data-i18n="warning_hwid">CẢNH BÁO BẢO MẬT PHẦN CỨNG:</b><br><span data-i18n="step3_warning">Mỗi KEY được cấp chỉ có hiệu lực duy nhất trên 1 Máy tính, 1 IP, và 1 Thiết bị Router Wifi/Adaptor. Mọi hành vi chia sẻ KEY (Share/Leak) sẽ khiến hệ thống nhận diện và <b>KHÓA KEY VĨNH VIỄN</b> không hoàn tiền. Nếu cần cài lại Win hoặc chuyển máy, vui lòng liên hệ Admin để được làm thủ tục hỗ trợ.</span></div></div></div></div><div class="max-w-3xl mx-auto rounded-xl overflow-hidden border border-gray-700 bg-black fade-up"><video controls class="w-full"><source src="TutorialVfs.webm" type="video/webm"></video><div class="p-4 bg-[#161b22] text-center"><p class="text-sm text-gray-400" data-i18n="video_guide_desc"><i class="fa-solid fa-circle-play text-blue-500 mr-2"></i>Video chi tiết: Cách nhập Key, nạp file, Unpack và Reimport chuẩn xác.</p></div></div></div></section><section id="pricing" class="py-20 bg-[#161b22] border-t border-[#30363d] px-4"><div class="max-w-5xl mx-auto"><div class="text-center mb-16 fade-up"><h2 class="text-3xl font-bold text-white mb-4" data-i18n="pricing_title">Bảng Giá Đầu Tư</h2><p class="text-gray-400" data-i18n="pricing_subtitle">Thanh toán một lần - Cấp Key vĩnh viễn theo máy - Cập nhật trọn đời.</p></div><div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"><div class="pricing-card bg-[#0d1117] border border-gray-700 rounded-2xl p-8 flex flex-col fade-up"><h3 class="text-xl font-bold text-gray-300 mb-2">GUIVFS.exe</h3><p class="text-sm text-gray-500 mb-6" data-i18n="price_desc_1">Dành cho nhu cầu Modding cơ bản.</p><div class="text-4xl font-extrabold text-white mb-6">2.999.999<span class="text-lg text-gray-500 font-normal"> VNĐ</span></div><a href="#contact" class="w-full py-3 px-4 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg text-center transition mb-8" data-i18n="btn_buy_now">Mua Ngay</a><div class="mt-auto"><p class="text-sm font-semibold text-gray-400 mb-4" data-i18n="includes">Bao gồm:</p><ul class="space-y-3 text-sm text-gray-400"><li><i class="fa-solid fa-check text-blue-500 mr-2"></i>Nạp .vfs QQ Speed cấu trúc chuẩn.</li><li><i class="fa-solid fa-check text-blue-500 mr-2"></i>Unpack/Reimport an toàn.</li><li><i class="fa-solid fa-check text-blue-500 mr-2"></i>HWID Lock (1 PC).</li></ul></div></div><div class="pricing-card bg-gradient-to-b from-gray-800 to-[#0d1117] border-2 border-purple-500 rounded-2xl p-8 flex flex-col relative fade-up" style="transition-delay: 0.1s;"><div class="absolute top-0 inset-x-0 transform -translate-y-1/2 flex justify-center"><span class="bg-purple-500 text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full" data-i18n="recommended">Được Khuyên Dùng</span></div><h3 class="text-xl font-bold text-purple-400 mb-2">VFS.exe (PRO)</h3><p class="text-sm text-gray-400 mb-6" data-i18n="price_desc_2">Động cơ mạnh nhất cho hệ thống tệp phức tạp.</p><div class="text-4xl font-extrabold text-white mb-6">14.999.999<span class="text-lg text-gray-500 font-normal"> VNĐ</span></div><a href="#contact" class="w-full py-3 px-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg text-center shadow-lg shadow-purple-900/50 transition mb-8" data-i18n="btn_buy_pro">Liên hệ Mua Bản Pro</a><div class="mt-auto"><p class="text-sm font-semibold text-gray-300 mb-4" data-i18n="includes_all">Tất cả tính năng bản thường, cộng thêm:</p><ul class="space-y-3 text-sm text-gray-300"><li><i class="fa-solid fa-star text-yellow-500 mr-2"></i><strong class="text-white">Full định dạng đồ họa</strong> (DDS, TGA, BMP...)</li><li><i class="fa-solid fa-shield text-purple-400 mr-2"></i>Thuật toán chống lỗi ẩn (Bugs prevention).</li><li><i class="fa-solid fa-headset text-purple-400 mr-2"></i>Ưu tiên hỗ trợ kỹ thuật 24/7.</li></ul></div></div></div></div></section><section id="contact" class="py-20 px-4 relative overflow-hidden"><div class="absolute inset-0 bg-blue-900/5 blur-[100px] z-0"></div><div class="max-w-4xl mx-auto relative z-10"><div class="text-center mb-12 fade-up"><h2 class="text-3xl font-bold text-white mb-4" data-i18n="contact_title">Cổng Giao Dịch & Hỗ Trợ</h2><p class="text-gray-400" data-i18n="contact_subtitle">Vui lòng điền form thông tin phía dưới để được xét duyệt cấp Key nhanh nhất, hoặc nhắn tin trực tiếp qua Instagram.</p><a href="https://www.instagram.com/diean.nam/" target="_blank" class="inline-flex items-center mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 rounded-full text-white font-bold transition transform hover:scale-105 shadow-lg shadow-pink-500/30"><i class="fa-brands fa-instagram text-2xl mr-3"></i> @diean.nam </a></div><div class="bg-gray-100 rounded-xl overflow-hidden shadow-2xl h-[800px] fade-up"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfS0pghiogl1sO95TXePIpxkh-39WJZSuiOeXd253yDAAfLeg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Đang tải biểu mẫu...</iframe><div class="bg-gray-800 text-center p-4 text-sm text-gray-400"><span data-i18n="form_fallback">Nếu form không hiển thị, vui lòng bấm vào link gốc:</span><a href="https://forms.gle/6iXwe6ep2XH92tG99" target="_blank" class="text-blue-400 hover:underline">https://forms.gle/6iXwe6ep2XH92tG99</a></div></div></div></section><footer class="bg-[#090c10] border-t border-gray-800 py-8 text-center text-sm text-gray-600"><p>© 2026 Dieannam. All rights reserved.</p></footer><script> const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 }; const observer = new IntersectionObserver((entries, observer) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, observerOptions); document.querySelectorAll('.fade-up').forEach((elem) => { observer.observe(elem); }); const translations = { "vi": { "nav_home": "Trang chính", "nav_info": "Thông tin", "nav_guide": "Hướng dẫn", "nav_pricing": "Bảng giá", "nav_contact": "Liên hệ", "hero_title": "Tool <span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>VFS</span> cho QQ飞车-端游", "hero_desc": "Công cụ chuyên nghiệp hỗ trợ trích xuất và đóng gói file .vfs cho hệ thống QQ Speed PC. Tối ưu hóa luồng làm việc với tốc độ cực hạn và độ chính xác tuyệt đối.", "info_title": "Sức Mạnh Cốt Lõi", "info_subtitle": "Chúng tôi cung cấp 2 phiên bản phần mềm được tinh chỉnh đặc biệt, đáp ứng mọi cấp độ của người sử dụng.", "ver_standard": "Phiên bản Tiêu Chuẩn", "gui_f1": "Nạp mượt mà các file .vfs tiêu chuẩn của tựa game QQ飞车-端游 (speed.qq.com).", "gui_f2": "Hỗ trợ đầy đủ định dạng cơ bản: .gsa, .tga, .png, .jpg, .lua, .luc.", "gui_f3": "Hệ thống Unpack & Reimport an toàn, ngăn chặn việc ghi đè các file trùng tên.", "gui_f4": "Cơ chế Lazy-loading: Hiển thị sẵn Thumbnail và xem Review trực tiếp trong Tool mà không cần xuất file ra ổ cứng.", "gui_f5": "Giao diện đồ họa (GUI) thân thiện, trực quan, dễ dàng thao tác cho người mới.", "badge_pro": "BẢN CHUYÊN NGHIỆP", "ver_premium": "Phiên bản Cao Cấp", "vfs_f1": "Nạp và giải mã toàn bộ nguyên bản các cấu trúc .vfs tân tiến và phức tạp nhất. Bao gồm mọi tính năng của bản GUIVFS.", "vfs_f2": "Hỗ trợ Review và Thumbnail chuyên sâu cho các định dạng đồ họa lõi: .dds, .tga, .gsa, .png, .jpg, .bmp...", "vfs_f3": "Động cơ Unpack & Reimport thông minh, tự động vượt qua các lớp bảo vệ và tránh các lỗi tiềm ẩn cực kỳ hiệu quả.", "vfs_f4": "Bảo vệ cấu trúc tệp gốc, cam kết tỷ lệ lỗi vặt (bugs) ở mức thấp nhất thị trường.", "disclaimer_title": "Lưu ý quan trọng:", "disclaimer_text": "Phần mềm chỉ cung cấp giải pháp can thiệp luồng dữ liệu (Nạp và Xuất file chứa trong .vfs). Chúng tôi không chịu trách nhiệm hay hỗ trợ các vấn đề liên quan đến việc chỉnh sửa, edit nội dung, hay thay đổi logic bên trong các file đó. Khách hàng vui lòng tự chủ động nghiên cứu. Phía dịch vụ chỉ hỗ trợ kỹ thuật liên quan đến vận hành Tool.", "guide_title": "Hướng Dẫn Sử Dụng", "step1_title": "Giao dịch & Nhận Key", "step1_desc": "Liên hệ trực tiếp qua thông tin phía dưới. Sau khi hoàn tất chuyển khoản, bạn sẽ được cấp quyền và nhận một License KEY độc quyền.", "step2_title": "Tải & Cài đặt", "step2_desc": "Hệ thống sẽ gửi link tải an toàn. Tải tệp nén về máy tính và giải nén bằng WinRAR/7-Zip theo cách thông thường.", "step3_title": "Kích hoạt Tool (ĐỌC KỸ)", "step3_desc": "Mở Tool, dán KEY của bạn vào hộp thoại để kích hoạt máy.", "warning_hwid": "CẢNH BÁO BẢO MẬT PHẦN CỨNG:", "step3_warning": "Mỗi KEY được cấp chỉ có hiệu lực duy nhất trên 1 Máy tính, 1 IP, và 1 Thiết bị Router Wifi/Adaptor. Mọi hành vi chia sẻ KEY (Share/Leak) sẽ khiến hệ thống nhận diện và <b>KHÓA KEY VĨNH VIỄN</b> không hoàn tiền. Nếu cần cài lại Win hoặc chuyển máy, vui lòng liên hệ Admin để được làm thủ tục hỗ trợ.", "video_guide_desc": "<i class='fa-solid fa-circle-play text-blue-500 mr-2'></i>Video chi tiết: Cách nhập Key, nạp file, Unpack và Reimport chuẩn xác.", "pricing_title": "Bảng Giá Đầu Tư", "pricing_subtitle": "Thanh toán một lần - Cấp Key vĩnh viễn theo máy - Cập nhật trọn đời.", "price_desc_1": "Dành cho nhu cầu Modding cơ bản.", "price_desc_2": "Động cơ mạnh nhất cho hệ thống tệp phức tạp.", "btn_buy_now": "Mua Ngay", "btn_buy_pro": "Liên hệ Mua Bản Pro", "includes": "Bao gồm:", "recommended": "Được Khuyên Dùng", "includes_all": "Tất cả tính năng bản thường, cộng thêm:", "contact_title": "Cổng Giao Dịch & Hỗ Trợ", "contact_subtitle": "Vui lòng điền form thông tin phía dưới để được xét duyệt cấp Key nhanh nhất, hoặc nhắn tin trực tiếp qua Instagram.", "form_fallback": "Nếu form không hiển thị, vui lòng bấm vào link gốc:" }, "en": { "nav_home": "Home", "nav_info": "Features", "nav_guide": "Guide", "nav_pricing": "Pricing", "nav_contact": "Contact", "hero_title": "Tool <span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>VFS</span> for QQ飞车-端游", "hero_desc": "Professional toolset engineered for extracting and packing .vfs archives for QQ Speed PC. Optimized workflow with extreme speed and absolute precision.", "info_title": "Core Capabilities", "info_subtitle": "We provide 2 specially tuned software editions, meeting the demands of every user level.", "ver_standard": "Standard Edition", "gui_f1": "Seamlessly load standard .vfs files from the official game client (speed.qq.com).", "gui_f2": "Full support for basic formats: .gsa, .tga, .png, .jpg, .lua, .luc.", "gui_f3": "Safe Unpack & Reimport system, strictly preventing duplicate file overwrites.", "gui_f4": "Lazy-loading mechanism: Built-in thumbnail display and in-app file preview without extracting to disk.", "gui_f5": "Friendly, intuitive Graphical User Interface (GUI), easy to navigate for beginners.", "badge_pro": "PRO EDITION", "ver_premium": "Premium Edition", "vfs_f1": "Load and decode all advanced and highly complex .vfs structures. Includes all features from GUIVFS.", "vfs_f2": "Deep Thumbnail and Preview support for core graphic formats: .dds, .tga, .gsa, .png, .jpg, .bmp...", "vfs_f3": "Intelligent Unpack & Reimport engine, automatically bypassing protection layers and effectively dodging hidden extraction errors.", "vfs_f4": "Preserves original file structures, guaranteeing the lowest bug rate on the market.", "disclaimer_title": "Important Notice:", "disclaimer_text": "This software strictly provides a data pipeline solution (Loading and Extracting files within .vfs archives). We hold no responsibility nor provide support for matters regarding editing, modifying content, or altering the internal logic of the extracted files. Customers are expected to research these aspects independently. Technical support only covers tool operational issues.", "guide_title": "Instruction Manual", "step1_title": "Transaction & Licensing", "step1_desc": "Contact us via the channels below. Upon successful payment, you will be granted access and a unique License KEY.", "step2_title": "Download & Install", "step2_desc": "We will provide a secure download link. Download the archive and extract it normally using WinRAR/7-Zip.", "step3_title": "Activate Tool (READ CAREFULLY)", "step3_desc": "Open the tool, paste your KEY into the prompt to bind your machine.", "warning_hwid": "HARDWARE SECURITY WARNING:", "step3_warning": "Each issued KEY is valid exclusively on 1 PC, 1 IP address, and bound to a specific Router/Network Adapter HWID. Any attempt to share or leak the KEY will trigger our automated system to <b>PERMANENTLY BAN THE KEY</b> with no refunds. If you need to reinstall Windows or change PCs, please contact the Admin for authorized hardware resets.", "video_guide_desc": "<i class='fa-solid fa-circle-play text-blue-500 mr-2'></i>Video Tutorial: How to enter Key, load files, Unpack and Reimport flawlessly.", "pricing_title": "Investment Plans", "pricing_subtitle": "One-time payment - Lifetime hardware-locked Key - Lifetime updates.", "price_desc_1": "Designed for standard modding needs.", "price_desc_2": "The ultimate engine for complex file systems.", "btn_buy_now": "Purchase Now", "btn_buy_pro": "Contact to Buy Pro", "includes": "Includes:", "recommended": "Highly Recommended", "includes_all": "All Standard features, plus:", "contact_title": "Trade Gateway & Support", "contact_title": "Contact & Support Gateway", "contact_subtitle": "Please fill out the form below for the fastest Key approval process, or DM directly via Instagram.", "form_fallback": "If the form fails to load, please click the original link:" } }; let currentLang = "vi"; function toggleLanguage() { currentLang = currentLang === "vi" ? "en" : "vi"; document.getElementById("lang-label").innerText = currentLang === "vi" ? "EN" : "VN"; document.querySelectorAll('[data-i18n]').forEach(el => { const key = el.getAttribute('data-i18n'); if (translations[currentLang][key]) { el.innerHTML = translations[currentLang][key]; } }); } </script></body></html>
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFS QQ飞车-端游</title>
+    <meta name="keywords" content="VFS QQSpeed, QQSpeed VFS, VFS Tool, Unpack VFS QQ Speed, Tool Mod QQ Speed, VFS QQ飞车, Dieannam VFS, Zing Speed VFS tool">
+    <meta name="author" content="Dieannam">
+    <link rel="icon" type="favicon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d1117; color: #c9d1d9; }
+        
+        /* Hiệu ứng xuất hiện mượt mà khi cuộn chuột */
+        .fade-up { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+        
+        /* Thiết kế bảng giá nổi bật */
+        .pricing-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.2); }
+        .pricing-card { transition: all 0.3s ease; }
+        
+        /* Chỉnh màu kính lúp của Navbar */
+        .glass-nav { background: rgba(13, 17, 23, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid #30363d; }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-cube text-blue-500 text-2xl"></i>
+                    <span class="font-bold text-xl text-white tracking-wider">VFS QQ飞车-端游</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_home">Trang chính</a>
+                    <a href="#info" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_info">Thông tin</a>
+                    <a href="#guide" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_guide">Hướng dẫn</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_pricing">Bảng giá</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400 font-medium transition" data-i18n="nav_contact">Liên hệ</a>
+                    
+                    <button id="lang-toggle" onclick="toggleLanguage()" class="ml-4 px-3 py-1 bg-gray-800 border border-gray-600 rounded text-sm hover:bg-gray-700 transition flex items-center gap-2">
+                        <i class="fa-solid fa-globe"></i> <span id="lang-label">EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto text-center fade-up">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight" data-i18n="hero_title">
+                Tool <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">VFS</span> cho QQ飞车-端游
+            </h1>
+            <p class="text-lg text-gray-400 mb-10 max-w-2xl mx-auto" data-i18n="hero_desc">
+                Công cụ chuyên nghiệp hỗ trợ trích xuất và đóng gói file .vfs cho hệ thống QQ飞车-端游 PC. Tối ưu hóa luồng làm việc với tốc độ cực hạn và độ chính xác tuyệt đối.
+            </p>
+            
+            <div class="relative mx-auto w-full max-w-4xl rounded-xl border border-gray-700 shadow-2xl overflow-hidden mb-16 group">
+                <img src="advfs.png" alt="Tool Interface" class="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0d1117] via-transparent to-transparent"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto rounded-xl overflow-hidden border border-gray-700 shadow-2xl fade-up">
+                <h3 class="bg-gray-800 text-left px-4 py-2 text-sm text-gray-400 font-semibold border-b border-gray-700"><i class="fa-solid fa-circle-play mr-2"></i>Live Demo</h3>
+                <video autoplay loop muted playsinline class="w-full">
+                    <source src="ReviewVfs.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="py-20 bg-[#161b22] border-y border-[#30363d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="info_title">Sức Mạnh Cốt Lõi</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto" data-i18n="info_subtitle">Chúng tôi cung cấp 2 phiên bản phần mềm được tinh chỉnh đặc biệt, đáp ứng mọi cấp độ của người sử dụng.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#0d1117] p-8 rounded-2xl border border-gray-700 fade-up">
+                    <div class="w-12 h-12 bg-blue-900/50 rounded-lg flex items-center justify-center mb-6 border border-blue-500/30">
+                        <i class="fa-solid fa-cube text-blue-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">GUIVFS.exe</h3>
+                    <p class="text-blue-400 text-sm font-semibold mb-6 uppercase tracking-wider" data-i18n="ver_standard">Phiên bản Tiêu Chuẩn</p>
+                    
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f1">Nạp mượt mà các file .vfs tiêu chuẩn của tựa game QQ飞车-端游 (speed.qq.com).</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f2">Hỗ trợ đầy đủ định dạng cơ bản: .gsa, .tga, .png, .jpg, .lua, .luc.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f3">Hệ thống Unpack & Reimport an toàn, ngăn chặn việc ghi đè các file trùng tên.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f4">Hiển thị sẵn Thumbnail và xem Review trực tiếp trong Tool mà không cần xuất file ra ổ cứng.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i><span data-i18n="gui_f5">Giao diện đồ họa (GUI) thân thiện, trực quan, dễ dàng thao tác cho người mới.</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-b from-gray-800 to-[#0d1117] p-8 rounded-2xl border border-purple-500/50 relative overflow-hidden fade-up" style="transition-delay: 0.2s;">
+                    <div class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg" data-i18n="badge_pro">BẢN CHUYÊN NGHIỆP</div>
+                    <div class="w-12 h-12 bg-purple-900/50 rounded-lg flex items-center justify-center mb-6 border border-purple-500/30">
+                        <i class="fa-solid fa-bolt text-purple-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">VFS.exe</h3>
+                    <p class="text-purple-400 text-sm font-semibold mb-6 uppercase tracking-wider" data-i18n="ver_premium">Phiên bản Cao Cấp</p>
+                    
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f1">Nạp và giải mã toàn bộ nguyên bản các cấu trúc .vfs tân tiến và phức tạp nhất. Bao gồm mọi tính năng của bản GUIVFS.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f2">Hỗ trợ Review và Thumbnail chuyên sâu cho các định dạng đồ họa lõi: .dds, .tga, .gsa, .png, .jpg, .bmp...</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f3">Động cơ Unpack & Reimport thông minh, tự động vượt qua các lớp bảo vệ và tránh các lỗi tiềm ẩn cực kỳ hiệu quả.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-purple-400 mt-1 mr-3"></i><span data-i18n="vfs_f4">Bảo vệ cấu trúc tệp gốc, cam kết tỷ lệ lỗi vặt (bugs) ở mức thấp.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-yellow-900/20 border-l-4 border-yellow-500 p-4 rounded-r text-sm text-yellow-200/80 fade-up">
+                <p><i class="fa-solid fa-triangle-exclamation mr-2"></i><strong data-i18n="disclaimer_title">Lưu ý quan trọng:</strong> <span data-i18n="disclaimer_text">Phần mềm chỉ cung cấp giải pháp can thiệp luồng dữ liệu (Nạp và Xuất file chứa trong .vfs). Chúng tôi không chịu trách nhiệm hay hỗ trợ các vấn đề liên quan đến việc chỉnh sửa, edit nội dung, hay thay đổi logic bên trong các file đó. Khách hàng vui lòng tự chủ động nghiên cứu. Phía dịch vụ chỉ hỗ trợ kỹ thuật liên quan đến vận hành Tool.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center fade-up" data-i18n="guide_title">Hướng Dẫn Sử Dụng</h2>
+            
+            <div class="space-y-8 mb-16 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-600 before:to-transparent">
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active fade-up">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#0d1117] bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">1</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#161b22] p-5 rounded-xl border border-gray-700 shadow-lg">
+                        <h4 class="text-lg font-bold text-white mb-2" data-i18n="step1_title">Giao dịch & Nhận Key</h4>
+                        <p class="text-gray-400 text-sm" data-i18n="step1_desc">Liên hệ trực tiếp qua thông tin phía dưới. Sau khi hoàn tất chuyển khoản, bạn sẽ được cấp quyền và nhận một License KEY độc quyền.</p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active fade-up">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#0d1117] bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">2</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#161b22] p-5 rounded-xl border border-gray-700 shadow-lg">
+                        <h4 class="text-lg font-bold text-white mb-2" data-i18n="step2_title">Tải & Cài đặt</h4>
+                        <p class="text-gray-400 text-sm" data-i18n="step2_desc">Hệ thống sẽ gửi link tải an toàn. Tải tệp nén về máy tính và giải nén bằng WinRAR/7-Zip theo cách thông thường.</p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active fade-up">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#0d1117] bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">3</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#161b22] p-5 rounded-xl border border-red-900/50 shadow-lg">
+                        <h4 class="text-lg font-bold text-white mb-2" data-i18n="step3_title">Kích hoạt Tool (ĐỌC KỸ)</h4>
+                        <p class="text-gray-400 text-sm mb-3" data-i18n="step3_desc">Mở Tool, dán KEY của bạn vào hộp thoại để kích hoạt máy.</p>
+                        <div class="bg-red-900/30 border border-red-700 p-3 rounded text-xs text-red-200">
+                            <i class="fa-solid fa-lock mr-1"></i> <b data-i18n="warning_hwid">CẢNH BÁO BẢO MẬT PHẦN CỨNG:</b><br>
+                            <span data-i18n="step3_warning">Mỗi KEY được cấp chỉ có hiệu lực duy nhất trên 1 Máy tính, 1 IP, và 1 Thiết bị Router Wifi/Adaptor. Mọi hành vi chia sẻ KEY (Share/Leak) sẽ khiến hệ thống nhận diện và <b>KHÓA KEY VĨNH VIỄN</b> không hoàn tiền. Nếu cần cài lại Win hoặc chuyển máy, vui lòng liên hệ Admin để được làm thủ tục hỗ trợ.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-3xl mx-auto rounded-xl overflow-hidden border border-gray-700 bg-black fade-up">
+                <video controls class="w-full">
+                    <source src="TutorialVfs.webm" type="video/webm">
+                </video>
+                <div class="p-4 bg-[#161b22] text-center">
+                    <p class="text-sm text-gray-400" data-i18n="video_guide_desc"><i class="fa-solid fa-circle-play text-blue-500 mr-2"></i>Video chi tiết: Cách nhập Key, nạp file, Unpack và Reimport chuẩn xác.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-[#161b22] border-t border-[#30363d] px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="pricing_title">Bảng Giá Đầu Tư</h2>
+                <p class="text-gray-400" data-i18n="pricing_subtitle">Thanh toán một lần - Cấp Key vĩnh viễn theo máy - Cập nhật trọn đời.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="pricing-card bg-[#0d1117] border border-gray-700 rounded-2xl p-8 flex flex-col fade-up">
+                    <h3 class="text-xl font-bold text-gray-300 mb-2">GUIVFS.exe</h3>
+                    <p class="text-sm text-gray-500 mb-6" data-i18n="price_desc_1">Dành cho nhu cầu Modding cơ bản.</p>
+                    <div class="text-4xl font-extrabold text-white mb-6">2.999.999<span class="text-lg text-gray-500 font-normal"> VNĐ</span></div>
+                    <a href="#contact" class="w-full py-3 px-4 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg text-center transition mb-8" data-i18n="btn_buy_now">Mua Ngay</a>
+                    <div class="mt-auto">
+                        <p class="text-sm font-semibold text-gray-400 mb-4" data-i18n="includes">Bao gồm:</p>
+                        <ul class="space-y-3 text-sm text-gray-400">
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i>Nạp .vfs QQ Speed cấu trúc chuẩn.</li>
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i>Unpack/Reimport an toàn.</li>
+                            <li><i class="fa-solid fa-check text-blue-500 mr-2"></i>HWID Lock (1 PC).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pricing-card bg-gradient-to-b from-gray-800 to-[#0d1117] border-2 border-purple-500 rounded-2xl p-8 flex flex-col relative fade-up" style="transition-delay: 0.1s;">
+                    <div class="absolute top-0 inset-x-0 transform -translate-y-1/2 flex justify-center">
+                        <span class="bg-purple-500 text-white text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full" data-i18n="recommended">Được Khuyên Dùng</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-purple-400 mb-2">VFS.exe (PRO)</h3>
+                    <p class="text-sm text-gray-400 mb-6" data-i18n="price_desc_2">Động cơ mạnh nhất cho hệ thống tệp phức tạp.</p>
+                    <div class="text-4xl font-extrabold text-white mb-6">14.999.999<span class="text-lg text-gray-500 font-normal"> VNĐ</span></div>
+                    <a href="#contact" class="w-full py-3 px-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg text-center shadow-lg shadow-purple-900/50 transition mb-8" data-i18n="btn_buy_pro">Liên hệ Mua Bản Pro</a>
+                    <div class="mt-auto">
+                        <p class="text-sm font-semibold text-gray-300 mb-4" data-i18n="includes_all">Tất cả tính năng bản thường, cộng thêm:</p>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><i class="fa-solid fa-star text-yellow-500 mr-2"></i><strong class="text-white">Full định dạng đồ họa</strong> (DDS, TGA, BMP...)</li>
+                            <li><i class="fa-solid fa-shield text-purple-400 mr-2"></i>Thuật toán chống lỗi ẩn (Bugs prevention).</li>
+                            <li><i class="fa-solid fa-headset text-purple-400 mr-2"></i>Ưu tiên hỗ trợ kỹ thuật 24/7.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-blue-900/5 blur-[100px] z-0"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-center mb-12 fade-up">
+                <h2 class="text-3xl font-bold text-white mb-4" data-i18n="contact_title">Cổng Giao Dịch & Hỗ Trợ</h2>
+                <p class="text-gray-400" data-i18n="contact_subtitle">Vui lòng điền form thông tin phía dưới để được xét duyệt cấp Key nhanh nhất, hoặc nhắn tin trực tiếp qua Instagram.</p>
+                
+                <a href="https://www.instagram.com/diean.nam/" target="_blank" class="inline-flex items-center mt-6 px-6 py-3 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 rounded-full text-white font-bold transition transform hover:scale-105 shadow-lg shadow-pink-500/30">
+                    <i class="fa-brands fa-instagram text-2xl mr-3"></i> @diean.nam
+                </a>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl overflow-hidden shadow-2xl h-[800px] fade-up">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfS0pghiogl1sO95TXePIpxkh-39WJZSuiOeXd253yDAAfLeg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Đang tải biểu mẫu...</iframe>
+                
+                <div class="bg-gray-800 text-center p-4 text-sm text-gray-400">
+                    <span data-i18n="form_fallback">Nếu form không hiển thị, vui lòng bấm vào link gốc:</span> 
+                    <a href="https://forms.gle/6iXwe6ep2XH92tG99" target="_blank" class="text-blue-400 hover:underline">https://forms.gle/6iXwe6ep2XH92tG99</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#090c10] border-t border-gray-800 py-8 text-center text-sm text-gray-600">
+        <p>© 2026 Dieannam. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 1. Hiệu ứng cuộn chuột (Fade Up)
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach((elem) => {
+            observer.observe(elem);
+        });
+
+        // 2. Hệ thống Dịch Ngôn Ngữ (Bilingual)
+        const translations = {
+            "vi": {
+                "nav_home": "Trang chính", "nav_info": "Thông tin", "nav_guide": "Hướng dẫn", "nav_pricing": "Bảng giá", "nav_contact": "Liên hệ",
+                "hero_title": "Tool <span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>VFS</span> cho QQ飞车-端游",
+                "hero_desc": "Công cụ chuyên nghiệp hỗ trợ trích xuất và đóng gói file .vfs cho hệ thống QQ Speed PC. Tối ưu hóa luồng làm việc với tốc độ cực hạn và độ chính xác tuyệt đối.",
+                "info_title": "Sức Mạnh Cốt Lõi",
+                "info_subtitle": "Chúng tôi cung cấp 2 phiên bản phần mềm được tinh chỉnh đặc biệt, đáp ứng mọi cấp độ của người sử dụng.",
+                "ver_standard": "Phiên bản Tiêu Chuẩn",
+                "gui_f1": "Nạp mượt mà các file .vfs tiêu chuẩn của tựa game QQ飞车-端游 (speed.qq.com).",
+                "gui_f2": "Hỗ trợ đầy đủ định dạng cơ bản: .gsa, .tga, .png, .jpg, .lua, .luc.",
+                "gui_f3": "Hệ thống Unpack & Reimport an toàn, ngăn chặn việc ghi đè các file trùng tên.",
+                "gui_f4": "Cơ chế Lazy-loading: Hiển thị sẵn Thumbnail và xem Review trực tiếp trong Tool mà không cần xuất file ra ổ cứng.",
+                "gui_f5": "Giao diện đồ họa (GUI) thân thiện, trực quan, dễ dàng thao tác cho người mới.",
+                "badge_pro": "BẢN CHUYÊN NGHIỆP",
+                "ver_premium": "Phiên bản Cao Cấp",
+                "vfs_f1": "Nạp và giải mã toàn bộ nguyên bản các cấu trúc .vfs tân tiến và phức tạp nhất. Bao gồm mọi tính năng của bản GUIVFS.",
+                "vfs_f2": "Hỗ trợ Review và Thumbnail chuyên sâu cho các định dạng đồ họa lõi: .dds, .tga, .gsa, .png, .jpg, .bmp...",
+                "vfs_f3": "Động cơ Unpack & Reimport thông minh, tự động vượt qua các lớp bảo vệ và tránh các lỗi tiềm ẩn cực kỳ hiệu quả.",
+                "vfs_f4": "Bảo vệ cấu trúc tệp gốc, cam kết tỷ lệ lỗi vặt (bugs) ở mức thấp nhất thị trường.",
+                "disclaimer_title": "Lưu ý quan trọng:",
+                "disclaimer_text": "Phần mềm chỉ cung cấp giải pháp can thiệp luồng dữ liệu (Nạp và Xuất file chứa trong .vfs). Chúng tôi không chịu trách nhiệm hay hỗ trợ các vấn đề liên quan đến việc chỉnh sửa, edit nội dung, hay thay đổi logic bên trong các file đó. Khách hàng vui lòng tự chủ động nghiên cứu. Phía dịch vụ chỉ hỗ trợ kỹ thuật liên quan đến vận hành Tool.",
+                "guide_title": "Hướng Dẫn Sử Dụng",
+                "step1_title": "Giao dịch & Nhận Key",
+                "step1_desc": "Liên hệ trực tiếp qua thông tin phía dưới. Sau khi hoàn tất chuyển khoản, bạn sẽ được cấp quyền và nhận một License KEY độc quyền.",
+                "step2_title": "Tải & Cài đặt",
+                "step2_desc": "Hệ thống sẽ gửi link tải an toàn. Tải tệp nén về máy tính và giải nén bằng WinRAR/7-Zip theo cách thông thường.",
+                "step3_title": "Kích hoạt Tool (ĐỌC KỸ)",
+                "step3_desc": "Mở Tool, dán KEY của bạn vào hộp thoại để kích hoạt máy.",
+                "warning_hwid": "CẢNH BÁO BẢO MẬT PHẦN CỨNG:",
+                "step3_warning": "Mỗi KEY được cấp chỉ có hiệu lực duy nhất trên 1 Máy tính, 1 IP, và 1 Thiết bị Router Wifi/Adaptor. Mọi hành vi chia sẻ KEY (Share/Leak) sẽ khiến hệ thống nhận diện và <b>KHÓA KEY VĨNH VIỄN</b> không hoàn tiền. Nếu cần cài lại Win hoặc chuyển máy, vui lòng liên hệ Admin để được làm thủ tục hỗ trợ.",
+                "video_guide_desc": "<i class='fa-solid fa-circle-play text-blue-500 mr-2'></i>Video chi tiết: Cách nhập Key, nạp file, Unpack và Reimport chuẩn xác.",
+                "pricing_title": "Bảng Giá Đầu Tư",
+                "pricing_subtitle": "Thanh toán một lần - Cấp Key vĩnh viễn theo máy - Cập nhật trọn đời.",
+                "price_desc_1": "Dành cho nhu cầu Modding cơ bản.",
+                "price_desc_2": "Động cơ mạnh nhất cho hệ thống tệp phức tạp.",
+                "btn_buy_now": "Mua Ngay",
+                "btn_buy_pro": "Liên hệ Mua Bản Pro",
+                "includes": "Bao gồm:",
+                "recommended": "Được Khuyên Dùng",
+                "includes_all": "Tất cả tính năng bản thường, cộng thêm:",
+                "contact_title": "Cổng Giao Dịch & Hỗ Trợ",
+                "contact_subtitle": "Vui lòng điền form thông tin phía dưới để được xét duyệt cấp Key nhanh nhất, hoặc nhắn tin trực tiếp qua Instagram.",
+                "form_fallback": "Nếu form không hiển thị, vui lòng bấm vào link gốc:"
+            },
+            "en": {
+                "nav_home": "Home", "nav_info": "Features", "nav_guide": "Guide", "nav_pricing": "Pricing", "nav_contact": "Contact",
+                "hero_title": "Tool <span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500'>VFS</span> for QQ飞车-端游",
+                "hero_desc": "Professional toolset engineered for extracting and packing .vfs archives for QQ Speed PC. Optimized workflow with extreme speed and absolute precision.",
+                "info_title": "Core Capabilities",
+                "info_subtitle": "We provide 2 specially tuned software editions, meeting the demands of every user level.",
+                "ver_standard": "Standard Edition",
+                "gui_f1": "Seamlessly load standard .vfs files from the official game client (speed.qq.com).",
+                "gui_f2": "Full support for basic formats: .gsa, .tga, .png, .jpg, .lua, .luc.",
+                "gui_f3": "Safe Unpack & Reimport system, strictly preventing duplicate file overwrites.",
+                "gui_f4": "Lazy-loading mechanism: Built-in thumbnail display and in-app file preview without extracting to disk.",
+                "gui_f5": "Friendly, intuitive Graphical User Interface (GUI), easy to navigate for beginners.",
+                "badge_pro": "PRO EDITION",
+                "ver_premium": "Premium Edition",
+                "vfs_f1": "Load and decode all advanced and highly complex .vfs structures. Includes all features from GUIVFS.",
+                "vfs_f2": "Deep Thumbnail and Preview support for core graphic formats: .dds, .tga, .gsa, .png, .jpg, .bmp...",
+                "vfs_f3": "Intelligent Unpack & Reimport engine, automatically bypassing protection layers and effectively dodging hidden extraction errors.",
+                "vfs_f4": "Preserves original file structures, guaranteeing the lowest bug rate on the market.",
+                "disclaimer_title": "Important Notice:",
+                "disclaimer_text": "This software strictly provides a data pipeline solution (Loading and Extracting files within .vfs archives). We hold no responsibility nor provide support for matters regarding editing, modifying content, or altering the internal logic of the extracted files. Customers are expected to research these aspects independently. Technical support only covers tool operational issues.",
+                "guide_title": "Instruction Manual",
+                "step1_title": "Transaction & Licensing",
+                "step1_desc": "Contact us via the channels below. Upon successful payment, you will be granted access and a unique License KEY.",
+                "step2_title": "Download & Install",
+                "step2_desc": "We will provide a secure download link. Download the archive and extract it normally using WinRAR/7-Zip.",
+                "step3_title": "Activate Tool (READ CAREFULLY)",
+                "step3_desc": "Open the tool, paste your KEY into the prompt to bind your machine.",
+                "warning_hwid": "HARDWARE SECURITY WARNING:",
+                "step3_warning": "Each issued KEY is valid exclusively on 1 PC, 1 IP address, and bound to a specific Router/Network Adapter HWID. Any attempt to share or leak the KEY will trigger our automated system to <b>PERMANENTLY BAN THE KEY</b> with no refunds. If you need to reinstall Windows or change PCs, please contact the Admin for authorized hardware resets.",
+                "video_guide_desc": "<i class='fa-solid fa-circle-play text-blue-500 mr-2'></i>Video Tutorial: How to enter Key, load files, Unpack and Reimport flawlessly.",
+                "pricing_title": "Investment Plans",
+                "pricing_subtitle": "One-time payment - Lifetime hardware-locked Key - Lifetime updates.",
+                "price_desc_1": "Designed for standard modding needs.",
+                "price_desc_2": "The ultimate engine for complex file systems.",
+                "btn_buy_now": "Purchase Now",
+                "btn_buy_pro": "Contact to Buy Pro",
+                "includes": "Includes:",
+                "recommended": "Highly Recommended",
+                "includes_all": "All Standard features, plus:",
+                "contact_title": "Trade Gateway & Support",
+                "contact_title": "Contact & Support Gateway",
+                "contact_subtitle": "Please fill out the form below for the fastest Key approval process, or DM directly via Instagram.",
+                "form_fallback": "If the form fails to load, please click the original link:"
+            }
+        };
+
+        let currentLang = "vi";
+        
+        function toggleLanguage() {
+            currentLang = currentLang === "vi" ? "en" : "vi";
+            document.getElementById("lang-label").innerText = currentLang === "vi" ? "EN" : "VN";
+            
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.innerHTML = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
